@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #00d4ff;
+}
+
+header {
+    background-color: #25253a;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px #ff00ff;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    z-index: 1;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #55ff55;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 0 0 5px #55ff55;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #2a2a3d;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00d4ff;
+}
+
+h2 {
+    color: #55ff55;
+    text-shadow: 0 0 8px #55ff55;
+    text-align: center;
+}
+
+h3 {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.shop-item {
+    background-color: #1e1e2f;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ff5555;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.shop-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #ff5555;
+}
+
+.product-image-placeholder {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+    background-color: #25253a;
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+.product-image-placeholder p {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+    font-size: 16px;
+}
+
+.glow-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff00ff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 0 15px #ff00ff;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.glow-button:hover {
+    background-color: #00ff00;
+    box-shadow: 0 0 25px #00ff00;
+    color: #000000;
+}
+
+footer {
+    background-color: #25253a;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #00d4ff;
+    box-shadow: 0 0 20px #00d4ff;
+}
+
+#glowCanvas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+}
+
+#download-link {
+    margin-top: 10px;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+#download-link a {
+    color: #00ff00;
+    text-decoration: underline;
+}
