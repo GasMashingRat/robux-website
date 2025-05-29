@@ -136,7 +136,7 @@ ul {
     padding: 10px 20px;
     background-color: #ff00ff;
     color: #000000;
-    text-decoration: none;
+245    text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     box-shadow: 0 0 15px #ff00ff;
@@ -158,7 +158,7 @@ footer {
     bottom: 0;
     width: 100%;
     color: #00d4ff;
-    box-shadow: 0 0 20px #00d4ff;
+    box-shadow: 0 0 20px #00ff00;
 }
 
 #glowCanvas {
