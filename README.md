@@ -1,1 +1,108 @@
-# robux-website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayco's RAT Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Rayco's Neon RAT Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#disclaimer">Disclaimer</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <canvas id="glowCanvas"></canvas>
+    </header>
+
+    <main>
+        <section id="shop">
+            <h2>Shop</h2>
+            <article class="shop-item">
+                <h3>Gas Mashin RAT (v17.0)</h3>
+                <div class="product-image-placeholder">
+                    <p>Gas Mashin Logo</p>
+                </div>
+                <p><strong>Price:</strong> 5 Robux</p>
+                <p><strong>Description:</strong> A Pulsar-inspired RAT for educational purposes.</p>
+                <div class="features">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Remote Desktop Streaming</li>
+                        <li>File Transfer (Upload/Download)</li>
+                        <li>Webcam Capture</li>
+                        <li>Shell Commands</li>
+                        <li>Clipboard Access</li>
+                    </ul>
+                </div>
+                <p><strong>Steps to Buy:</strong></p>
+                <ol>
+                    <li>Click "Buy Now" to get the game pass for 5 Robux.</li>
+                    <li>Message <strong>bassabassar</strong> on Roblox with proof of purchase.</li>
+                    <li>Receive your private download link for <code>gas_mashin_client.exe</code>.</li>
+                </ol>
+                <a href="https://www.roblox.com/game-pass/1238815189/Thanks-For-Buying" target="_blank" class="glow-button">Buy Now</a>
+                <p id="download-link" style="display:none;">Download Link: <a href="#" id="download-url">Pending Payment</a></p>
+            </article>
+        </section>
+
+        <section id="disclaimer">
+            <h2>Disclaimer</h2>
+            <p><strong>Legal Warning:</strong> This RAT is for educational purposes only. Unauthorized use on others' systems is illegal and unethical. Use it only on devices you own or have explicit permission to access. Distributing or using this tool maliciously may violate laws and Roblox’s Terms of Service, potentially leading to account bans or legal action.</p>
+            <p><strong>Educational Use Only:</strong> This is a learning project, not for malicious intent. I am not responsible for any misuse.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Reach out to me after purchase!</p>
+            <p><strong>Roblox:</strong> bassabassar</p>
+            <p><strong>Discord:</strong> ray.halhol</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Rayco | Not affiliated with Roblox | 2025</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('glowCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = 100;
+
+        function drawGlow() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'rgba(255, 0, 255, 0.3)';
+            for (let i = 0; i < 5; i++) {
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * canvas.height;
+                ctx.beginPath();
+                ctx.arc(x, y, 20, 0, Math.PI * 2);
+                ctx.shadowBlur = 20;
+                ctx.shadowColor = '#ff00ff';
+                ctx.fill();
+            }
+            requestAnimationFrame(drawGlow);
+        }
+        drawGlow();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+        });
+
+        // Simulated link reveal (replace with actual logic after payment)
+        function revealDownloadLink() {
+            const downloadLink = document.getElementById('download-link');
+            const downloadUrl = document.getElementById('download-url');
+            downloadUrl.href = '#'; // Replace with actual file URL after payment verification
+            downloadUrl.textContent = 'https://[your-username].github.io/rat_shop_final/gas_mashin_client.exe'; // Placeholder
+            downloadLink.style.display = 'block';
+        }
+        // Call this function manually after verifying payment
+    </script>
+</body>
+</html>
